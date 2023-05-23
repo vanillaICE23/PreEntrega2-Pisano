@@ -519,6 +519,8 @@ form{
 
 /*****  CSS CONTACTO  ******/
 
+/*****  CSS MEDIAQUERIES  ******/
+
 
 @media (max-width:530px) {
     .card-title{
@@ -532,5 +534,39 @@ form{
     }
     .legend{
         font-size: 18px;
+    }
+}
+@media (max-width:700px){
+    .about-paragraph{
+        font-size: 12px;
+    }
+}
+@media (max-width:450px){
+    .destacados-cards {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 500px;
+        grid-template-areas:
+            "destacados-crest" 
+            "destacados-low" 
+            "destacados-high";    
+    }
+    .destacados-low{
+        margin-top: 50px;
+    }
+    .destacados-cta{
+        font-size: 10px;
+    }
+    .about-paragraph{
+        display: block;
+    }
+    .about-paragraph-2{
+        padding-top: 20px;
+    }
+    .reserva-container{
+        margin-top: 150px;
+    }
+    .banner-title{
+        font-size: 20px;
     }
 }
